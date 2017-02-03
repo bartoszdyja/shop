@@ -1,0 +1,11 @@
+<div class="col-md-2">
+  <img src="http://lorempixel.com/output/city-q-c-640-480-8.jpg" alt="" class="image">
+</div>
+<div class="col-md-10 details">
+  <div class="title">
+    {{#link-to 'products.show' product}}{{product.name}}{{/link-to}}
+  </div>
+  <div class="price">
+    {{price-formatter product.price}}
+  </div>
+</div>

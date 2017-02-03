@@ -1,0 +1,11 @@
+<h2>{{model.name}}</h2>
+{{#if model.products}}
+  {{#each model.products as |product|}}
+    <article class='offer'>
+      {{product-item product=product}}
+    </article>
+    <hr>
+  {{/each}}
+{{else}}
+  <h4>There are not any products here.</h4>
+{{/if}}
